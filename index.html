@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00204a;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Obada Jazaerli</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html#Background">Background</a>
+                        <a class="dropdown-item" href="about.html#Skills">Skills</a>
+                        <a class="dropdown-item" href="about.html#Journey">My Journey</a>
+                    </div>
+                  </li>
+
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="header-text">
+                <h1>Obada Jazaerli</h1>
+            </div>
+            <section class="carousel">
+                <div class="carousel-slide">
+                    <div class="carousel-text">Software Engineering</div>
+                    <div class="carousel-text">Backend Developer</div>
+                    <div class="carousel-text">Frontend Developer</div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot" onclick="moveToSlide(0)"></span>
+                    <span class="dot" onclick="moveToSlide(1)"></span>
+                    <span class="dot" onclick="moveToSlide(2)"></span>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="welcome-message" class="text-center my-4"></div>
+        <section class="intro fade-in">
+            <h2>About Me</h2>
+            <p>I’m Obada Jazaerli, a junior software developer with a strong foundation in software engineering and an enthusiasm for problem-solving and innovation. I hold a degree in Informatics Engineering from the International University for Science and Technology in Damascus, Syria, and am currently pursuing my Master’s in Computer Science at the Syrian Virtual University. My technical skills include .NET Core and Python, and I enjoy working on projects that challenge my development skills and deepen my understanding of backend and AI-driven applications. I’m excited to apply my knowledge in real-world settings, constantly seeking opportunities to grow and contribute to impactful projects.</p>
+        </section>
+        <hr class="border border-primary border-2 opacity-50">
+        <section class="skills fade-in">
+            <h2>Skills</h2>
+            <ul>
+                <li class="highlight">Programming Languages: .NET Core, Python</li>
+                <li class="highlight">Frameworks: ASP.NET Core, React.Js</li>
+                <li class="highlight">Specializations: Backend development, AI-driven applications</li>
+            </ul>
+        </section>
+        <hr class="border border-primary border-2 opacity-50">
+        <section class="interests fade-in">
+            <h2>Interests</h2>
+            <p>I am passionate about software development, especially in backend technologies and artificial intelligence. My interests include exploring .NET Core and Python frameworks, working on dynamic web applications, and developing solutions for data processing and machine learning. Outside of coding, I enjoy staying updated on the latest tech trends, researching advancements in AI, and engaging in projects that challenge conventional software solutions. I also have a keen interest in networking and system automation, which I continue to develop through hands-on projects and certifications.</p>
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>MCS_WP1_S24_C2_obada_339168</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

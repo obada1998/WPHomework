@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00204a;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Obada Jazaerli</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="about.html#Background">Background</a>
+                        <a class="dropdown-item" href="about.html#Skills">Skills</a>
+                        <a class="dropdown-item" href="about.html#Journey">My Journey</a>
+                    </div>
+                  </li>
+
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <section class="header-text">
+                    <h1> My Projects</h1>
+                    <p>A collection of coding projects showcasing my skills</p>
+            </section>
+            <section class="carousel d-none d-sm-block">
+                <div class="carousel-slide">
+                    <img src="images/1.jfif" alt="img 1">
+                    <img src="images/2.jfif" alt="img 2">
+                    <img src="images/3.jfif" alt="img 3">
+                    <img src="images/4.jfif" alt="img 4">
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot" onclick="moveToSlide(0)"></span>
+                    <span class="dot" onclick="moveToSlide(1)"></span>
+                    <span class="dot" onclick="moveToSlide(2)"></span>
+                    <span class="dot" onclick="moveToSlide(3)"></span>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="projects">
+            <div class="project fade-in">
+                <h4>Integrated Clinic Management System</h4>
+                <p>The Integrated Clinic Management System is designed to streamline clinic operations by managing patient records, appointment scheduling, billing, and inventory. This system enhances efficiency and improves patient care through seamless integration of essential healthcare functions.</p>
+                <a href="https://github.com/" target="_blank">View on GitHub</a>
+            </div>
+    
+            <div class="project fade-in">
+                <h4>Online Appointment Booking System</h4>
+                <p>The Online Appointment Booking System allows users to schedule appointments with service providers through a web interface. This system simplifies the booking process, reduces wait times, and enhances user experience by providing real-time availability and confirmation notifications.</p>
+                <a href="https://github.com/" target="_blank">View on GitHub</a>
+            </div>
+    
+            <div class="project fade-in">
+                <h4>Deep Fake Application</h4>
+                <p>The Deep Fake Application utilizes advanced machine learning techniques to create realistic synthetic media by swapping faces or altering voice in videos. This application can be used for various purposes, including entertainment, education, and creative expression, while also raising important discussions about ethics and misinformation in digital media.</p>
+                <a href="https://github.com/" target="_blank">View on GitHub</a>
+            </div>
+            
+            <div class="project fade-in">
+                <h4>Text Processing Application</h4>
+                <p>The Text Processing Application using AI leverages artificial intelligence to analyze and manipulate text data effectively. This application can perform tasks such as sentiment analysis, text classification, summarization, and language translation, enabling users to derive meaningful insights and automate text-based workflows efficiently.</p>
+                <a href="https://github.com/" target="_blank">View on GitHub</a>
+            </div>
+         </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>MCS_WP1_S24_C2_obada_339168</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

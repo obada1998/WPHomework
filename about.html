@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #00204a;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Obada Jazaerli</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About Me</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#Background">Background</a>
+                      <a class="dropdown-item" href="#Skills">Skills</a>
+                      <a class="dropdown-item" href="#Journey">My Journey</a>
+                    </div>
+                  </li>
+
+
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header>
+        <div class="container">
+            <div class="header-text">
+                <h1>About Me</h1>
+            </div>
+
+            <section class="carousel">
+                <div class="carousel-slide">
+                    <div class="carousel-text">Learn more about my background</div>
+                    <div class="carousel-text">Discover my professional journey</div>
+                    <div class="carousel-text">Get to know my interests</div>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot" onclick="moveToSlide(0)"></span>
+                    <span class="dot" onclick="moveToSlide(1)"></span>
+                    <span class="dot" onclick="moveToSlide(2)"></span>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="about-me">
+                <div class="contentheader">
+                    <h3>Obada jazaerli</h3>
+                    <h6>Software Engineering | Jounior Developer</h6>
+                    <h6> Damascus - Syria</h6>
+                    <h6>+963 994-996-367</h6>
+                    <h6>jazaerli.obada@gmail.com</h6>
+                </div>
+                <hr class="border border-primary border-2 opacity-50">
+                <div>
+                    <section id="Background">
+                        <h4>Background</h4>
+                        <h5> Summary</h5>
+                        <p>I am Obada Jazaerli, a junior software developer with a passion for building effective, scalable solutions in software engineering. With a foundation in Informatics Engineering and ongoing advanced studies in Computer Science, I am skilled in .NET Core and Python, and I thrive in environments that challenge my creativity and technical expertise.</p>
+                        <hr>
+                        <div class="edu">
+                            <h5>Education</h5>
+                            <p>Master’s in Computer Science (Current)</p>
+                            <p>Syrian Virtual University</p>
+                            <p>Bachelor’s in Informatics Engineering (2024)</p>
+                            <p>International University for Science and Technology, Damascus, Syria</p>
+                        </div>
+                        <hr>
+                    </section>
+                    <section id="Skills">
+                        <h5>Technical Skills</h5>
+                        <ul>
+                            <li>Object Oriented Programming</li>
+                            <li>Object Oriented Design</li>
+                            <li>Object Relational Mapper</li>
+                            <li>SQL Server</li>
+                            <li>Python</li>   
+                            <li>.NET Core</li>
+                            <li>ASP.NET Core APIs</li>                  
+                            <li>ASP.Net MVC</li>  
+                            <li>ASP.Net MVVM</li>   
+                            <li>HTML & CSS</li>               
+                            <li>JavaScript & jQuery</li> 
+                            <li>React & Vue </li> 
+                        </ul>
+                    </section>
+                </div>
+                
+                <hr class="border border-primary border-2 opacity-50">
+                <section id="Journey">
+                    <h4>My Journey</h4>
+                    <p>From my initial studies in Informatics Engineering to my current pursuit of a master’s degree, my journey has been driven by a deep interest in software engineering and problem-solving. I have completed projects ranging from online booking systems to AI-powered text processing and am continuously building skills in backend development and frontend.</p>
+                </section>
+
+                
+                <hr class="border border-primary border-2 opacity-50">
+                <section id="Interests">
+                    <h4>Interests</h4>         
+                    <p>I am particularly interested in backend development, AI, and exploring the applications of automation in systems management. My goal is to create impactful projects that push the boundaries of traditional software solutions and contribute to the tech industry’s growth.</p>
+                </section>
+
+                
+                <button  class="btn btn-primary" id="toggle-info-btn">Show More Information</button>      
+                <div id="additional-info" style="display: none;"> 
+                    <hr class="border border-primary border-2 opacity-50">
+                        <section id="Additional"> 
+                            <div class="edu">
+                                <h4>Additional Information</h4>
+                                <h6>Languages</h6>
+                                <p>Arabic (native), English (Good)</p>
+                                <hr>
+                                <h6>Technical Certifications</h6>
+                                <p>Information and Communications Technology</p>
+                                <p>Advanced C# Programming</p>
+                                <p>ASP.Net Core</p>
+                                <p>Hadoop</p>
+                            </div> 
+                    </section>
+                </div> 
+        </section>
+    </div>
+    <footer>
+        <div class="container">
+            <p>MCS_WP1_S24_C2_obada_339168</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
